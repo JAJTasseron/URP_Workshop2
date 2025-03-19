@@ -12,15 +12,14 @@ Succes en veel plezier met renderen!
 ## Het licht aanzetten (8 minuten)
 Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. Voeg een point light toe op de coördinaten ... zodat de speler zijn omgeving kan zien. 
 
-## De asset verbeteren (8 minuten)
-Als de speler om zich heen kijkt, kan die helaas nog geen mooie omgeving zien. Kijk
-
 ## Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. 
 
-Houd er wel rekening mee dat dit niet de standaard manier is waarop de profiler gebruikt wordt, maar dat deze opdracht bedoeld is om je bekend te laten worden met de profiler. Gewoonlijk wordt de profiler gebruikt om te zien waar de bottleneck in je spel zit (bijvoorbeeld op CPU, GPU en rendering calls). Als je bijvoorbeeld zou zien dat de renderer veel tijd inneemt, zou je verschillende aanpassingen kunnen maken aan het project om de rendering te verbeteren. Eén optie om dat te doen is static batching. In de volgende stappen gaan we proberen static batching aan te zetten en zullen we in de profiler een verbetering zien van de rendering performance. 
+TODO: Laat zien wat ze moeten doen met de paddenstoelen
 
 ![image](https://github.com/user-attachments/assets/38acaf44-bcd4-43af-8fd3-28268403b497)
+
+Houd er wel rekening mee dat dit niet de standaard manier is waarop de profiler gebruikt wordt, maar dat deze opdracht bedoeld is om je bekend te laten worden met de profiler. Gewoonlijk wordt de profiler gebruikt om te zien waar de bottleneck in je spel zit (bijvoorbeeld op CPU, GPU en rendering calls). Als je bijvoorbeeld zou zien dat de renderer veel tijd inneemt, zou je verschillende aanpassingen kunnen maken aan het project om de rendering te verbeteren. Eén optie om dat te doen is static batching. In de volgende stappen gaan we proberen static batching aan te zetten en zullen we in de profiler een verbetering zien van de rendering performance. 
 
 Om static batching te gebruiken, moet je als eerst static batching aanzetten in het project. (zie figuur ???)
 
@@ -34,5 +33,7 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
-
 ## Stap ???
+
+## De asset verbeteren (8 minuten)
+TODO: Laat ze met render scale kloten en maak een aparte scene voor LOD. 
