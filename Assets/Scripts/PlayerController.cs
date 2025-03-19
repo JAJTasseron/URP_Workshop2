@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform cameraTransform;
     
     private Rigidbody _rb;
+    private GameObject _body;
     private Vector2 _moveDirection;
     private RaycastHit _hit;
     private bool _isJumping;
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Walk(_moveDirection);
+        Turn();
     }
 
     public void OnMove(InputValue value)
@@ -30,5 +32,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 movement = cameraTransform.forward * direction.y + cameraTransform.right * direction.x;
         _rb.AddForce(movement.normalized * movementSpeed);
+    }
+
+    private void Turn()
+    {
+        transform.rotation = Quaternion.Euler(0, cameraTransform.eulerAngles.y, 0);
     }
 }
