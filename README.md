@@ -9,13 +9,13 @@ De volgende tekst bevat het stappenplan om het Unity-project te verbeteren. Er z
 Bij elke stap staat hoelang het zou moeten duren. Als je de tijd niet haalt, kan je voor elke overkoepelende stap een nieuwe branch inladen om naar die specifieke stap te gaan. 
 Succes en veel plezier met renderen!
 
-## Het licht aanzetten
+## Het licht aanzetten (8 minuten)
 Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. Voeg een point light toe op de coördinaten ... zodat de speler zijn omgeving kan zien. 
 
-## De asset verbeteren
+## De asset verbeteren (8 minuten)
 Als de speler om zich heen kijkt, kan die helaas nog geen mooie omgeving zien. Kijk
 
-## Een goede framerate
+## Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. 
 
 Houd er wel rekening mee dat dit niet de standaard manier is waarop de profiler gebruikt wordt, maar dat deze opdracht bedoeld is om je bekend te laten worden met de profiler. Gewoonlijk wordt de profiler gebruikt om te zien waar de bottleneck in je spel zit (bijvoorbeeld op CPU, GPU en rendering calls). Als je bijvoorbeeld zou zien dat de renderer veel tijd inneemt, zou je verschillende aanpassingen kunnen maken aan het project om de rendering te verbeteren. Eén optie om dat te doen is static batching. In de volgende stappen gaan we proberen static batching aan te zetten en zullen we in de profiler een verbetering zien van de rendering performance. 
