@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     
     private void Jump()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame )
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && IsGrounded())
         {
             _rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
