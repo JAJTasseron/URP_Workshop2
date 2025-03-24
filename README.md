@@ -9,8 +9,10 @@ De volgende tekst bevat het stappenplan om het Unity-project te verbeteren. Er z
 Bij elke stap staat hoelang het zou moeten duren. Als je de tijd niet haalt, kan je voor elke overkoepelende stap een nieuwe branch inladen om naar die specifieke stap te gaan. 
 Succes en veel plezier met renderen!
 
-## Het licht aanzetten (8 minuten)
-Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. Voeg een point light toe op de coördinaten ... zodat de speler zijn omgeving kan zien. 
+## Het licht aanzetten | Particles toevoegen (8 minuten)
+Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. Voeg de juiste light type toe aan de torch zodat de player zijn omgeving kan zien. 
+
+Particles..
 
 ## Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. 
