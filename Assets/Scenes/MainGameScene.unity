@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 498574963}
   - component: {fileID: 498574962}
   m_Layer: 0
-  m_Name: Fairies
+  m_Name: Stinky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -426,7 +426,7 @@ Transform:
   m_GameObject: {fileID: 498574960}
   serializedVersion: 2
   m_LocalRotation: {x: 0.70723015, y: 0, z: 0, w: 0.7069834}
-  m_LocalPosition: {x: -0, y: -0, z: 1.083}
+  m_LocalPosition: {x: 0, y: 0, z: 0.519}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -483,7 +483,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498574960}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: e51b96e91d8d58d41b7675e85d424443, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: c5c906922d36235468941a70271552fb, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -493,7 +493,7 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 1
+      - m_Value: 1.49
         m_Name: Radius
         m_Overridden: 1
     m_Vector2f:
@@ -506,7 +506,7 @@ VisualEffect:
       m_Array: []
     m_Int:
       m_Array:
-      - m_Value: 100
+      - m_Value: 14
         m_Name: Amount
         m_Overridden: 1
     m_Matrix4x4f:
