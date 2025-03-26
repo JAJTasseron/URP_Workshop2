@@ -16,8 +16,8 @@
 
 ## VFX
 1. Om de kleur te veranderen naar geel moet de "set color" blok aangepast worden alsvolgt:
-![color image](images/color.png)
+![Color image](images/Color%20Image.png)
 2. Om de feeën te laten vliegen rond de fontein te vliegen moet de VFX graph er alsvolgd uitzien:
-![flying image](images/image-1.png)
+![flying image](images/VFXGraph.png)
 De "set position shape" blok moet verwijderd worden 
 ## Global Effects

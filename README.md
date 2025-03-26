@@ -65,7 +65,7 @@ Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De op
 
 #### Requirements  
 
-- De stinkende deeltjes moeten een gele kleur krijgen.  
+- De stinkende deeltjes moeten een gele of blauwe kleur krijgen.  
 - Feeën moeten rond de fontein draaien met behulp van een **Rotate 3D**-node.  
 - De **spawnlocatie** van de feeën moet willekeurig zijn om een natuurlijke verspreiding te creëren. Dit bepaalt ook de spawnradius.  
 - De positie van de feeën moet in het **Update Particle**-blok worden aangepast, zodat ze rond de fontein blijven bewegen.  
