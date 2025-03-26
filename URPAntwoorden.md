@@ -3,7 +3,10 @@
 ## Licht Aanzetten
 
 -	De juiste light type voor de torch is de point light. Point light geeft licht aan alle kanten vanuit de torch.
--	Particles..
+  ![image](https://github.com/user-attachments/assets/e2a2ebd7-e95a-4fc6-99a8-6ed2c5dd050a)
+
+-	De juiste light type voor de fontein is de spot light. Spot light zorgt ervoor dat alleen de fontein licht ontvangt.
+  ![image](https://github.com/user-attachments/assets/82354406-5ba3-4621-92c7-575eb92c2c62)
 
 
 ## Een Goede Framerate
