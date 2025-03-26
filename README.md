@@ -10,8 +10,9 @@ Bij elke stap staat hoelang het zou moeten duren. Als je de tijd niet haalt, kan
 Succes en veel plezier met renderen!
 
 ## Het licht aanzetten (5 minuten)
-Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. Voeg de juiste light type toe aan de torch zodat de player zijn omgeving kan zien. 
-Zorg er ook voor dat er licht vanuit boven op de fontein schijnt. Dit is van belang voor de volgende stappen.
+Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. 
+- Voeg de juiste light type toe aan de torch zodat de player zijn omgeving kan zien. 
+- Zorg er ook voor dat er licht vanuit boven op de fontein schijnt. Dit is van belang voor de volgende stappen.
 
 ## Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. Open de profiler door op Window>Analysis>Profiler te klikken. Als je het spel aanzet terwijl de profiler open staat zal je een analyse van de framerate zien. Als je op een willekeurig tijdstip op de timeline klikt (de grote groene grafiek) zal je als het goed is het volgende zien: 
