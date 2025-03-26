@@ -17,6 +17,9 @@ Particles..
 ## Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. Open de profiler door op Window>Analysis>Profiler te klikken. Als je het spel aanzet terwijl de profiler open staat zal je als het goed is het volgende zien: 
 
+![image](https://github.com/user-attachments/assets/d35660c5-42c4-4442-aefd-29d129b99d14)
+
+
 De profiler heeft een paar belangrijke onderdelen. Onderdelen van de profiler worden hieronder genummerd en uitgelegd: 
 
 ![image](https://github.com/user-attachments/assets/89d686b9-9f3e-4246-8ced-a450b01bb1cc)
