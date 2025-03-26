@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 727722312}
   - component: {fileID: 727722311}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Strange_Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1190,7 +1190,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 100000
+    maxNumParticles: 150000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1456,7 +1456,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10000
+      scalar: 30000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
