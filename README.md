@@ -26,7 +26,7 @@ De profiler heeft een paar belangrijke onderdelen. Onderdelen van de profiler wo
 
 ![image](https://github.com/user-attachments/assets/78f5e834-20c3-475f-ad2e-8adceca6a4ce)
 
-![image](https://github.com/user-attachments/assets/0166811c-6978-4989-ba97-640473a9bc95)
+![image](https://github.com/user-attachments/assets/3a81e2a3-1559-417a-b6c4-37af04bce302)
 
 1. Via deze drop down kan je profiler modules aan of uit zetten die dan aan de linker kant van de profiler weergeven worden. 
 2. Via deze drop down kan je de target frame rate zetten. De profiler zal dan checken of het spel aan deze framerate voldoet tijdens het testen. 
