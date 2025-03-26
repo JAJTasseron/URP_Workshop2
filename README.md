@@ -70,6 +70,18 @@ Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De op
 - De **spawnlocatie** van de feeën moet willekeurig zijn om een natuurlijke verspreiding te creëren. Dit bepaalt ook de spawnradius.  
 - De positie van de feeën moet in het **Update Particle**-blok worden aangepast, zodat ze rond de fontein blijven bewegen.  
 
+## Post processing
+
+Om de scene wat minder plat en eentonig te maken kan je post processing effecten toe te voegen. Je kan dit doen door de default volume aan te passen, of een golbal volume aan te maken en hier overrides in aan te geven.
+De default volume heeft alle post processing effecten tot zijn beschikking en ziet er als volgt uit:
+
+![image](https://github.com/user-attachments/assets/e71358bf-b27c-4cea-b838-fc384c774373)
+
+Een global volume kan je als GameObject aan je scene toevoegen, in de inspector kan je hier een volume profile voor aanmaken. Vervolgens kan je hier overrides aan toe voegen voor de post processing onderdelen die je wilt aanpassen. Gebruik dit om je scene er zo mooi mogelijk uit te laten zien.
+
+![image](https://github.com/user-attachments/assets/5ace08d9-223e-43ec-8704-b5bc4bbf773a)
+
+
 
 
 
