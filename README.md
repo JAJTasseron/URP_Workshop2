@@ -59,7 +59,19 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
-## Stap ???
+## Fairies Introduceren
+
+Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De opdracht is om de VFX Graph te gebruiken om de "stinkende" deeltjes te transformeren in feeën die rond de fontein vliegen.  
+
+#### Requirements  
+
+- De stinkende deeltjes moeten een gele kleur krijgen.  
+- Feeën moeten rond de fontein draaien met behulp van een **Rotate 3D**-node.  
+- De **spawnlocatie** van de feeën moet willekeurig zijn om een natuurlijke verspreiding te creëren. Dit bepaalt ook de spawnradius.  
+- De positie van de feeën moet in het **Update Particle**-blok worden aangepast, zodat ze rond de fontein blijven bewegen.  
+
+
+
 
 ## De asset verbeteren (8 minuten)
 TODO: Laat ze met render scale kloten en maak een aparte scene voor LOD. 
