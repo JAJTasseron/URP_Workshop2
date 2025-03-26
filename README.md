@@ -15,12 +15,31 @@ Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de sce
 Particles..
 
 ## Een goede framerate (8 minuten)
-Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. 
+Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. Open de profiler door op Window>Analysis>Profiler te klikken. Als je het spel aanzet terwijl de profiler open staat zal je als het goed is het volgende zien: 
 
-TODO: Laat zien wat ze moeten doen met de paddenstoelen
+De profiler heeft een paar belangrijke onderdelen. Onderdelen van de profiler worden hieronder genummerd en uitgelegd: 
+
+![image](https://github.com/user-attachments/assets/89d686b9-9f3e-4246-8ced-a450b01bb1cc)
+
+![image](https://github.com/user-attachments/assets/78f5e834-20c3-475f-ad2e-8adceca6a4ce)
+
+![image](https://github.com/user-attachments/assets/0166811c-6978-4989-ba97-640473a9bc95)
+
+1. Via deze drop down kan je profiler modules aan of uit zetten die dan aan de linker kant van de profiler weergeven worden. 
+2. Via deze drop down kan je de target frame rate zetten. De profiler zal dan checken of het spel aan deze framerate voldoet tijdens het testen. 
+3. Dit is een timeline waar getoond wordt of de CPU en GPU de framerate halen. Als je op een punt op deze timeline klikt zal je onderin het scherm een berekening zien van de CPU en GPU times. 
+4. Dit zijn de modules met legenda om te zien welk onderdeel gelinkt is aan de timeline. 
+5. Dit is de timeline waarin wordt bijgehouden hoeveel fps elke module (en daaronder elk deel van de module) heeft. 
+6. Hier staan de opties voor de detail view. Hierdoor kan je in verschillende manieren zien hoe de verdeling van processing tijd verdeelt is over verschillende processen/functies. 
+7. Hier staat een gedetailleerde view van hoeveel processing tijd elk process/functie erover doet en in welke volgorde die het doet.
+
+Nu je snapt hoe de profiler in elkaar steekt, kan je proberen de volgende opdracht uit te voeren: 
+Er is een gameobject die voor veel lag zorgt. Vind dit object en verwijder het. Tip: Zet elk gameobject uit totdat de performance dramatisch verbeterd. Zie het figuur hieronder hoe het er als het goed is uitziet als het gameobject wordt uitgezet. 
 
 ![image](https://github.com/user-attachments/assets/38acaf44-bcd4-43af-8fd3-28268403b497)
 
+
+### Static batching
 Houd er wel rekening mee dat dit niet de standaard manier is waarop de profiler gebruikt wordt, maar dat deze opdracht bedoeld is om je bekend te laten worden met de profiler. Gewoonlijk wordt de profiler gebruikt om te zien waar de bottleneck in je spel zit (bijvoorbeeld op CPU, GPU en rendering calls). Als je bijvoorbeeld zou zien dat de renderer veel tijd inneemt, zou je verschillende aanpassingen kunnen maken aan het project om de rendering te verbeteren. Eén optie om dat te doen is static batching. In de volgende stappen gaan we proberen static batching aan te zetten en zullen we in de profiler een verbetering zien van de rendering performance. 
 
 Om static batching te gebruiken, moet je als eerst static batching aanzetten in het project. (zie figuur ???)
