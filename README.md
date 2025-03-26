@@ -24,15 +24,17 @@ De profiler heeft een paar belangrijke onderdelen. Onderdelen van de profiler wo
 
 ![image](https://github.com/user-attachments/assets/89d686b9-9f3e-4246-8ced-a450b01bb1cc)
 
-![image](https://github.com/user-attachments/assets/78f5e834-20c3-475f-ad2e-8adceca6a4ce)
-
-![image](https://github.com/user-attachments/assets/3a81e2a3-1559-417a-b6c4-37af04bce302)
-
 1. Via deze drop down kan je profiler modules aan of uit zetten die dan aan de linker kant van de profiler weergeven worden. 
 2. Via deze drop down kan je de target frame rate zetten. De profiler zal dan checken of het spel aan deze framerate voldoet tijdens het testen. 
 3. Dit is een timeline waar getoond wordt of de CPU en GPU de framerate halen. Als je op een punt op deze timeline klikt zal je onderin het scherm een berekening zien van de CPU en GPU times. 
+
+![image](https://github.com/user-attachments/assets/78f5e834-20c3-475f-ad2e-8adceca6a4ce)
+
 4. Dit zijn de modules met legenda om te zien welk onderdeel gelinkt is aan de timeline. 
 5. Dit is de timeline waarin wordt bijgehouden hoeveel fps elke module (en daaronder elk deel van de module) heeft. 
+
+![image](https://github.com/user-attachments/assets/3a81e2a3-1559-417a-b6c4-37af04bce302)
+
 6. Hier staan de opties voor de detail view. Hierdoor kan je in verschillende manieren zien hoe de verdeling van processing tijd verdeelt is over verschillende processen/functies. 
 7. Hier staat een gedetailleerde view van hoeveel processing tijd elk process/functie erover doet en in welke volgorde die het doet.
 
