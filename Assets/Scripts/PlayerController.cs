@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _rb = GetComponent<Rigidbody>();
         foreach(Transform child in transform)
         {
