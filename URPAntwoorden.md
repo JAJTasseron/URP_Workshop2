@@ -6,7 +6,10 @@
 -	Particles..
 
 
-## Find The Brick
+## Een Goede Framerate
+-	Om het gameobject te vinden moet je elk gameobject in de hyrarchy uitzetten via de inspector totdat de lag afneemt. Als het goed is zal je in de profiler kunnen zien wanneer de lag dramatisch afneemt. 
+-	Het gameobject wat voor deze lag zorgt is de particle generator verstopt in: Cave_Toadstools>Toadstools2>Toadstools1>Strange_Mushroom. 
+![image](https://github.com/user-attachments/assets/2817109b-df30-45cc-b094-e1bcac8894c4)
 
 ## Shader Graph | Water
 
