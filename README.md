@@ -137,7 +137,7 @@ Een global volume kan je als GameObject aan je scene toevoegen, in de inspector 
 
 ![image](https://github.com/user-attachments/assets/5ace08d9-223e-43ec-8704-b5bc4bbf773a)
 
-## Extra stap | LOD's
+## Extra stap | LOD's (5 minuten)
 
 Requirement:
 - Ga naar LODScene.
