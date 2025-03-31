@@ -59,7 +59,7 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
-## Het stinkende water schoonmaken.
+## Het stinkende water schoonmaken (Shader graph)
 
 Zoals je ziet is het water stinkend en groen. Maak deze weer blauw door gebruik van de shader graph. Ook staat het water stil voeg beweging zoals kleine golfjes toe aan het water. Gebruik de volgende nodes:
 
