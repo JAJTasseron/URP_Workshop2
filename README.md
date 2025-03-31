@@ -139,11 +139,13 @@ Een global volume kan je als GameObject aan je scene toevoegen, in de inspector 
 
 ## Extra stap | LOD's
 
+Requirement:
+- Ga naar LODScene.
 
+Om er voor te zorgen dat een object niet op hoge kwaliteit gerendered blijft als de camera er verder van af gaat, maken wij gebruik van de Level of Detail component (LOD). 
+Op de plane is een boom geplaatst waarvan de kwaliteit omlaag gaat als de camera er verder vanaf gaat. 
 
-
-
-
+Zorg er voor dat de transition tussen de LOD's sneller zijn, zodat je verschil tussen de kwaliteit sneller kan zien.
 
 
 ## De asset verbeteren (8 minuten)
