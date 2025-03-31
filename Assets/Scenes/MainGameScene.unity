@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 155762137}
   - component: {fileID: 155762136}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: fountain_water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,12 +222,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155762135}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.89, y: -3.77, z: 24.98}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalRotation: {x: 4.32978e-17, y: -0.7071067, z: -0.7071068, w: -4.3297806e-17}
+  m_LocalPosition: {x: 0, y: 0, z: -0.10500001}
+  m_LocalScale: {x: 3.3333335, y: 0.50000006, z: 3.333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1373479299}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
@@ -5650,6 +5650,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 417748, guid: 8142860b8f89a564faf152e3c8b743e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 498574961}
+    - targetCorrespondingSourceObject: {fileID: 417748, guid: 8142860b8f89a564faf152e3c8b743e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 155762139}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 178508, guid: 8142860b8f89a564faf152e3c8b743e7, type: 3}
       insertIndex: -1
@@ -6734,5 +6737,4 @@ SceneRoots:
   - {fileID: 428822551194158123}
   - {fileID: 6334799157543443041}
   - {fileID: 996995333}
-  - {fileID: 155762139}
   - {fileID: 1862966748}
