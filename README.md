@@ -9,12 +9,12 @@ De volgende tekst bevat het stappenplan om het Unity-project te verbeteren. Er z
 Bij elke stap staat hoelang het zou moeten duren. Als je de tijd niet haalt, kan je voor elke overkoepelende stap een nieuwe branch inladen om naar die specifieke stap te gaan. 
 Succes en veel plezier met renderen!
 
-## Het licht aanzetten (5 minuten)
+## Stap 1 | Het licht aanzetten (5 minuten)
 Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de scene zweven. Dit is een grot waar de speler in staat, het is helaas nog compleet donker. 
 - Voeg de juiste light type toe aan de torch zodat de player zijn omgeving kan zien. 
 - Zorg er ook voor dat er licht vanuit boven op de fontein schijnt. Alleen de fontein moet belicht zijn, dus gebruik de juiste light type. Dit is van belang voor de volgende stappen.
 
-## Een goede framerate (8 minuten)
+## Stap 2 | Een goede framerate (8 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. Open de profiler door op Window>Analysis>Profiler te klikken. Als je het spel aanzet terwijl de profiler open staat zal je een analyse van de framerate zien. Als je op een willekeurig tijdstip op de timeline klikt (de grote groene grafiek) zal je als het goed is het volgende zien: 
 
 ![image](https://github.com/user-attachments/assets/d35660c5-42c4-4442-aefd-29d129b99d14)
@@ -60,7 +60,7 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
 
-## Het stinkende water schoonmaken (Shader graph)
+## Stap 3 | Het stinkende water schoonmaken (Shader graph)
 
 Zoals je ziet is het water stinkend en groen. De stinkende particles gaan we omtoveren naar fairies bij de VFX graph, deze hoef je voor dit onderdeel dus niet aan te passen. Wel gaan we hier alvast het groene water naar een blauwe kleur toveren doormiddel van de shader graph. Bestudeer de water shader graph. Deze kun je openen door te dubbel klikken op WaterShader helemaal rechts.
 
@@ -107,7 +107,7 @@ Je kan in de de scene inspector bij surface inputs de displacement aanpassen. De
 Als het goed is heb je nu golvend water :')
 
 
-## Fairies Introduceren
+## Stap 4 | Fairies Introduceren
 
 Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De opdracht is om de VFX Graph te gebruiken om de "stinkende" deeltjes te transformeren in feeën die rond de fontein vliegen.  
 
@@ -126,7 +126,7 @@ Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De op
 - Zorg dat de groote van de golf aangepast kan worden in de inspector
 
 
-## Post processing
+## Stap 5 | Post processing
 
 Om de scene wat minder plat en eentonig te maken kan je post processing effecten toe te voegen. Je kan dit doen door de default volume aan te passen, of een golbal volume aan te maken en hier overrides in aan te geven.
 De default volume heeft alle post processing effecten tot zijn beschikking en ziet er als volgt uit:
@@ -136,6 +136,11 @@ De default volume heeft alle post processing effecten tot zijn beschikking en zi
 Een global volume kan je als GameObject aan je scene toevoegen, in de inspector kan je hier een volume profile voor aanmaken. Vervolgens kan je hier overrides aan toe voegen voor de post processing onderdelen die je wilt aanpassen. Gebruik dit om je scene er zo mooi mogelijk uit te laten zien.
 
 ![image](https://github.com/user-attachments/assets/5ace08d9-223e-43ec-8704-b5bc4bbf773a)
+
+## Extra stap | LOD's
+
+
+
 
 
 
