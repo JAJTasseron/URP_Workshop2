@@ -59,6 +59,10 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
+##Het stinkende water schoonmaken.
+
+Zoals je ziet is het water stinkend en groen. Maak deze weer blauw door gebruik van de shader graph. Ook staat het water stil voeg beweging zoals kleine golfjes toe aan het water. Gebruik de volgende nodes:
+
 ## Fairies Introduceren
 
 Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De opdracht is om de VFX Graph te gebruiken om de "stinkende" deeltjes te transformeren in feeën die rond de fontein vliegen.  
