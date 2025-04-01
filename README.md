@@ -60,53 +60,82 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 ![image](https://github.com/user-attachments/assets/9d06ac43-f9e2-4ee0-94e7-234cc0693967)
 
 
-## Stap 3 | Het stinkende water schoonmaken (Shader graph)
 
-Zoals je ziet is het water stinkend en groen. De stinkende particles gaan we omtoveren naar fairies bij de VFX graph, deze hoef je voor dit onderdeel dus niet aan te passen. Wel gaan we hier alvast het groene water naar een blauwe kleur toveren doormiddel van de shader graph. Bestudeer de water shader graph. Deze kun je openen door te dubbel klikken op WaterShader helemaal rechts.
+# Stap 3 | Het stinkende water schoonmaken (Shader Graph) (25min)
 
-![image](https://github.com/user-attachments/assets/a0eb8e9c-658e-4487-a26f-db41e2c5a46f)
+Het water in de fontein ziet er momenteel stinkend en groen uit. De stinkende particles worden in een later stadium omgetoverd naar feeën via de VFX Graph, dus hier hoef je niets aan te passen. In deze stap focussen we ons op het aanpassen van de waterkleur van stinkend groen naar blauw met behulp van de Shader Graph.
 
-De shader graph
+## Water Shader Graph openen
 
-![image](https://github.com/user-attachments/assets/9223b8af-9d69-45c1-9c39-f005bee2334f)
+Om de Shader Graph van het water te openen:
+1. Dubbelklik op **WaterShader** aan de rechterkant.
+
+### Shader Graph overzicht
+
+![Shader Graph](https://github.com/user-attachments/assets/a0eb8e9c-658e-4487-a26f-db41e2c5a46f)
+
+Hierboven zie je het gedeelte waarin de kleur van het water wordt ingesteld. Links kunnen we inputwaarden aanmaken en deze koppelen aan nodes. Deze waarden zijn vervolgens instelbaar vanuit de **Scene View**.
+
+### Waterkleur aanpassen
+
+1. Klik op het water in de fontein of op **fountain_water** in de **Hierarchy**.
+2. In de **Inspector** zie je nu de verschillende inputwaarden van de surface (het water).
+
+![Inspector](https://github.com/user-attachments/assets/5ea225a4-131f-4726-ae6f-0517619109d0)
+
+3. In de Shader Graph zie je dat het water alleen een **shallowWater** kleur gebruikt die gekoppeld is aan **A** en **B** van de node.
+4. Pas de volgende wijzigingen toe:
+   - **Verwijder** de connectie van **shallowWater** naar de **B input** van de node.
+   - **Voeg een nieuwe waarde toe:** **deepWater**.
+   - **Verbind** deze waarde met de **B input** van de **Lerp node**.
+   - **Stel de kleuren in:** vergeet niet deze een Alpha value mee te geven anders is de kleur doorzichtig. Ik heb er een suggestie bij gezet.
+     - **ShallowWater:** Lichtblauw  (Alpha: 195)
+     - **DeepWater:** Donkerblauw  (Alpha: 220)
+
+De **Lerp node** werkt samen met de **Depth input value** om de kleuren te variëren op basis van de diepte van het water. Dit zorgt ervoor dat:
+- Het water bij de randen lichter is.
+- Het water dieper in de fontein donkerder wordt.
+- De diepte waar deze overgang plaatsvindt wordt bepaald door de **Depth input value** (voor nu zetten we deze op : **0.1**).
+
+![Depth instellingen](https://github.com/user-attachments/assets/5f655f5e-d662-43ce-8a4b-f2ee1dce2348)
+
+> **Let op:** De Lerp node is verbonden met de **Fragment Base Color** (voor kleur) en via een **Split node** met de **Alpha value** (voor transparantie).
+
+## (Advanced) Waterbeweging toevoegen
+
+Het water staat momenteel stil. We voegen nu kleine golfjes toe. Je kunt nodes toevoegen in de Shader Graph door op **Spatie** te drukken en de juiste nodes te zoeken.
+
+### Stappenplan:
+
+1. Voeg de volgende nodes toe en verbind ze zoals hieronder:
+   
+   **Eerste chain van nodes (tijd en offset berekening):**
+   - `(Time(Time1))` → `(Divide(A1))` (zet X van B op **100**).
+   - `(Divide(Out1))` → `(Tiling and Offset(Offset2))` (zet Tiling X en Y op **1**).
+   - `(Tiling and Offset(Out2))` → `(Gradient Noise(UV2))` (zet X op **20**).
+   - `(Gradient Noise(UV2))` → `(Multiply(B1))`.
+   - Voeg een **input value** genaamd **Displacement** toe en verbind deze met **A van de Multiply node**.
+
+2. Maak een nieuwe chain van nodes:
+   - Begin met `(Position)` en zet **Space op Object** (in plaats van World).
+   - `(Position(Out3))` → `(Split(In3))`.
+   - `(Split(R1))` → `(Combine(R1))`.
+   - `(Split(B1))` → `(Combine(B1))`.
+   - Verbind de **Multiply node uit de eerste keten** met `(Combine(G1))`.
+   - `(Combine(Out))` → **Vertex Position (3)**.
+
+3. Pas de golvenintensiteit aan:
+   - Ga in de **Scene Inspector** naar **Surface Inputs** en pas de **Displacement** waarde aan.
+   - Zet **Displacement op 0.3**.
+
+4.  Waarschijnlijk is door het aanpassen van de displacement het water nu te laag om te zien. Controleer de transform van het water:
+   - Klik op het water in de fontein of op **fountain_water** in de **Hierarchy**.
+   - Waarschijnlijk staat de **Z-transform** nu op **-0.105**. 
+   - Zet deze op ongeveer **0.26** zodat het water zichtbaar blijft.
+
+ **Als alles goed is gegaan, heb je nu golvend water!** 🎉🎉
 
 
-Hier boven zie je het deel waar de kleur van het water wordt ingesteld. Links kunnen we inputvalues aanmaken en deze aan nodes hangen. Deze zijn vervolgens instelbaar vanuit de scene view. Klik op het water in de fontein of op fountain_water in de hierarchy. Als het goed is kan je in de inspector nu de verschillende inputs zien van de surface(het water)
-
-![image](https://github.com/user-attachments/assets/5ea225a4-131f-4726-ae6f-0517619109d0)
-
-
-Zoals te zien in de shader graph heeft het water nu alleen groen shallowWater die aansluit op a en b van de node. Verwijder de connectie van shallowWater naar de b input van de node en voeg een deepWater value toe en hang deze aan de b input van de lerp node. Pas de kleuren aan van shallowWater en deepWater naar lichtblauw en donker blauw(vergeet niet de alpha value in te stellen(195 voor lichtblauw en 220 voor donkerblauw).  Deze lerp node in combinatie met de input field depth zorgt ervoor dat de kleuren verschillen op basis van diepte van het water. Dit gebeurt links in de shadergraph bij depth. De water kleur veranderd bij de randen en in het midden dichtbij het steen van de fontein. Hoe dichter bij de randen of hoe ondieper het water hoe lichter het water wordt. Vanaf hoe ondiep dit gebeurd is in te stellen met de depth input value. Voor nu is 0.1 goed.
-
-![image](https://github.com/user-attachments/assets/5f655f5e-d662-43ce-8a4b-f2ee1dce2348)
-Zoals je misschien al is opgevallen hangt deze lerp node aan de fragment base color(om de kleur aan te passen) en via een split node aan de aan de alpha value(om de transparantie van de kleur aan te passen. 
-
-Voor de volgende stap passen we niet de fragment aan maar aan de vertex.
-
-
-(Advanced) Ook staat het water stil voeg beweging zoals kleine golfjes toe aan het water. Je kan nodes toevoegen door op spatie te drukken in de shader graph vervolgens kan je zoeken in de zoekbalk.
-
-Tip doe dit boven in in de buurt van de vertex.
-
-Voeg de volgende nodes toe en connect ze op de volgende wijze. Nodes worden aangegeven met () en de value van een node met de binnenste haakjes.
-
-(time(time1)) -> (divide(A1)) zet x van b op 100. (divide(Out1)) -> (Tiling and Offset(Offset2)) zet de tiling x en y op 1.  (Tiling and Offset(out2)) -> (Gradient Noise(UV2)) zet de x op 20.  
-(Gradient Noise(UV2)) -> (Multiply(B1)) voeg een input value genaamd Displacement toe aan de a van de Multiply node.
-
-Maak nu een nieuwe chain van nodes.
-
-begin met position en zet de space op Object ipv world.
-(Position(Out3)) -> (Split(In3)).  (Split(R1)) -> (Combine(R1)) en (Split(B1)) -> (Combine(B1)) (connect de split r1 en b1 naar dezelfde combine node.) 
-
-Vervolgens kunnen we de Multiply node van de eerste chain ook connecten aan de Combine node deze doen we op (Multiply(out1) -> (Combine(G1)).
-
-Connect de Combine node out nu aan de vertex Position(3).
-
-Je kan in de de scene inspector bij surface inputs de displacement aanpassen. Deze value stelt de intensiteit van de golven in. Zet deze op 0.3.
-
- Klik nogmaals op het water in de fontein of op fountain_water in de hierarchy. Waarschijnlijk staat de z van de transform nu op -0.105 zet deze op 0.26. Anders is het water te laag en zul je het niet zien.
-
-Als het goed is heb je nu golvend water :')
 
 
 ## Stap 4 | Fairies Introduceren
