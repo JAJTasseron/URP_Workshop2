@@ -13,7 +13,7 @@ Als je de scene inlaad, zie je als het goed is een vreemd zwart object in de sce
 - Voeg de juiste light type toe aan de torch zodat de player zijn omgeving kan zien. 
 - Zorg er ook voor dat er licht vanuit boven op de fontein schijnt. Alleen de fontein moet belicht zijn, dus gebruik de juiste light type. Dit is van belang voor de volgende stappen.
 
-## Stap 2 | Een goede framerate (8 minuten)
+## Stap 2 | Een goede framerate (15 minuten)
 Het spel kan mogelijk wat laggy aanvoelen, vooral als je midden in de grot aan het rondkijken bent. Het is op verschillende manieren mogelijk om erachter te komen wat er voor deze lag zorgt. Voor nu zullen we de profiler gebruiken. Open de profiler door op Window>Analysis>Profiler te klikken. Als je het spel aanzet terwijl de profiler open staat zal je een analyse van de framerate zien. Als je op een willekeurig tijdstip op de timeline klikt (de grote groene grafiek) zal je als het goed is het volgende zien: 
 
 ![image](https://github.com/user-attachments/assets/d35660c5-42c4-4442-aefd-29d129b99d14)
