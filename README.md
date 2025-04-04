@@ -60,7 +60,7 @@ Zet het spel aan en kijk naar de profiler. Klik op de Rendering module aan de li
 
 
 
-# Stap 3 | Het stinkende water schoonmaken (Shader Graph) (25min)
+# Stap 3 | Het stinkende water schoonmaken (Shader Graph) (25 minuten)
 
 Het water in de fontein ziet er momenteel stinkend en groen uit. De stinkende particles worden in een later stadium omgetoverd naar feeën via de VFX Graph, dus hier hoef je niets aan te passen. In deze stap focussen we ons op het aanpassen van de waterkleur van stinkend groen naar blauw met behulp van de Shader Graph.
 
@@ -137,7 +137,7 @@ Het water staat momenteel stil. We voegen nu kleine golfjes toe. Je kunt nodes t
 
 
 
-## Stap 4 | Fairies Introduceren
+## Stap 4 | Fairies Introduceren (25 minuten)
 
 Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De opdracht is om de VFX Graph te gebruiken om de "stinkende" deeltjes te transformeren in feeën die rond de fontein vliegen.  
 
@@ -156,7 +156,7 @@ Op dit moment zijn er geen feeën rond de fontein, omdat het water stinkt. De op
 - Zorg dat de groote van de golf aangepast kan worden in de inspector
 
 
-## Stap 5 | Post processing
+## Stap 5 | Post processing (10 minuten)
 
 Om de scene wat minder plat en eentonig te maken kan je post processing effecten toe te voegen. Je kan dit doen door de default volume aan te passen, of een golbal volume aan te maken en hier overrides in aan te geven.
 De default volume heeft alle post processing effecten tot zijn beschikking en ziet er als volgt uit:
