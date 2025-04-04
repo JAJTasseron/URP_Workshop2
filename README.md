@@ -177,6 +177,3 @@ Op de plane is een boom geplaatst waarvan de kwaliteit omlaag gaat als de camera
 
 Zorg er voor dat de transition tussen de LOD's sneller zijn, zodat je verschil tussen de kwaliteit sneller kan zien.
 
-
-## De asset verbeteren (8 minuten)
-TODO: Laat ze met render scale kloten en maak een aparte scene voor LOD. 
