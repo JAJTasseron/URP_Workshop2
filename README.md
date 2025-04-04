@@ -1,7 +1,6 @@
 # URP_Workshop2
 
 De volgende tekst bevat het stappenplan om het Unity-project te verbeteren. Er zijn namelijk problemen met onderdelen van URP, voornamelijk: 
-- URP-asset
 - Performance
 - Verlichting
 - Shaders
